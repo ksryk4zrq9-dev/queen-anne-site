@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atendimento | Queen Anne</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="page-wrapper">
+
+  <div id="header"></div>
+
+  <main class="atendimento-page">
+
+    <section class="atendimento-hero">
+      <span>FALE CONOSCO</span>
+      <h1>Atendimento Queen Anne</h1>
+      <p>
+        Envie suas dúvidas, sugestões ou solicitações. Será um prazer atender você.
+      </p>
+    </section>
+
+    <section class="atendimento-grid">
+
+      <div class="atendimento-form-card">
+        <h2>Enviar mensagem</h2>
+
+        <form action="mailto:atendimento@queenanne.com" method="post" enctype="text/plain">
+
+          <label>Nome</label>
+          <input type="text" name="nome" placeholder="Seu nome" required>
+
+          <label>E-mail</label>
+          <input type="email" name="email" placeholder="seuemail@email.com" required>
+
+          <label>Telefone / WhatsApp</label>
+          <input type="text" name="telefone" placeholder="+595 982 419 453">
+
+          <label>Assunto</label>
+          <input type="text" name="assunto" placeholder="Como podemos ajudar?">
+
+          <label>Mensagem</label>
+          <textarea name="mensagem" rows="6" placeholder="Digite sua mensagem..." required></textarea>
+
+          <button type="submit">Enviar mensagem</button>
+
+        </form>
+      </div>
+
+      <div class="atendimento-info-card">
+
+        <h2>Canais de atendimento</h2>
+
+        <div class="atendimento-info-item">
+          <i class="fa-regular fa-envelope"></i>
+          <div>
+            <strong>E-mail</strong>
+            <a href="atendimento.html">atendimento@queenanne.com</a>
+          </div>
+        </div>
+
+        <div class="atendimento-info-item">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/595982419453" target="_blank">+595 982 419 453</a>
+          </div>
+        </div>
+
+        <div class="atendimento-info-item">
+          <i class="fa-regular fa-clock"></i>
+          <div>
+            <strong>Horário</strong>
+            <p>Seg a Sex: 08h às 18h<br>Sáb: 08h às 12h</p>
+          </div>
+        </div>
+
+        <div class="atendimento-info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Nossas lojas</strong>
+            <p>Queen Anne Importados — Paraguai</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</div>
+
+<footer class="footer-qa">
+  <!-- pode colar aqui o mesmo footer que você já usa -->
+</footer>
+
+<script src="supabase-api.js"></script>
+<script src="produto.js"></script>
+<script src="busca-inteligente.js"></script>
+
+</body>
+</html>
