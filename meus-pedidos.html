@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
-<body>
+<body class="cliente-sem-bg">
 
 <div class="page-wrapper">
 
@@ -70,7 +70,7 @@
         </div>
 
         <div class="cliente-since-badge">
-          <i class="fa-regular fa-crown"></i>
+          <i class="fa-solid fa-crown"></i>
           <span>Cliente desde</span>
           <strong>2026</strong>
         </div>
@@ -109,46 +109,41 @@
 
         <aside class="cliente-dados-card" id="meusDados">
 
-        
-
-          <div class="cliente-user-badge">
-  <div class="cliente-user-avatar">
-    <i class="fa-regular fa-user"></i>
+  <div class="cliente-card-head">
+    <h2>Meus dados</h2>
   </div>
 
-  <div>
-    <span>Cliente desde</span>
-    <strong>2026</strong>
+  <div class="cliente-dados-top">
+    <div class="cliente-avatar">
+      <i class="fa-regular fa-user"></i>
+    </div>
+
+    <div>
+      <h3 id="clienteNomeLista">Cliente</h3>
+      <p id="clienteEmailLista">email@exemplo.com</p>
+      <p id="clienteTelefoneLista">(00) 00000-0000</p>
+    </div>
   </div>
-</div>
 
-            <div>
-              <strong id="clienteNomeDados">Cliente Queen Anne</strong>
-              <span id="clienteEmailDados">cliente@email.com</span>
-              <span id="clienteTelefoneDados">(00) 00000-0000</span>
-            </div>
-          </div>
+  <div class="cliente-dados-lista">
+    <div>
+      <span><i class="fa-regular fa-envelope"></i> E-mail</span>
+      <strong id="clienteEmailDados">email@exemplo.com</strong>
+    </div>
 
-          <div class="cliente-dados-lista">
-            <p>
-              <span><i class="fa-regular fa-envelope"></i> E-mail</span>
-              <strong id="clienteEmailLista">cliente@email.com</strong>
-            </p>
+    <div>
+      <span><i class="fa-solid fa-phone"></i> Telefone</span>
+      <strong id="clienteTelefoneDados">(00) 00000-0000</strong>
+    </div>
 
-            <p>
-              <span><i class="fa-solid fa-phone"></i> Telefone</span>
-              <strong id="clienteTelefoneLista">(00) 00000-0000</strong>
-            </p>
+    
+  </div>
 
-            <p>
-              <span><i class="fa-regular fa-newspaper"></i> Newsletter</span>
-              <strong class="cliente-news-ok">Recebendo novidades</strong>
-            </p>
-          </div>
+  <a href="meus-dados.html" class="cliente-btn-outline full">
+    Ver todos os dados
+  </a>
 
-          <button class="cliente-btn-outline full">Ver todos os dados</button>
-
-        </aside>
+</aside>
 
       </section>
 
@@ -161,8 +156,13 @@
 
 </div>
 
-<script src="script.js"></script>
-<script src="cliente-area.js"></script>
+<script src="./cliente-storage.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="./js/supabase-api.js"></script>
+
+<script src="./script.js"></script>
+<script src="./cliente-area.js"></script>
 
 </body>
 </html>
